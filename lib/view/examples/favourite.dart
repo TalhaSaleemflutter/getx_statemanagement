@@ -16,7 +16,7 @@ class _FavouriteState extends State<Favourite> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Favourite')),
+      appBar: AppBar(title: const Text('Favourite file')),
       body: ListView.builder(
         itemCount: favourite.fruitList.length,
         itemBuilder: (context, index) {
@@ -43,7 +43,7 @@ class _FavouriteState extends State<Favourite> {
                       favourite.tempFruitList.contains(
                             favourite.fruitList[index].toString(),
                           )
-                          ? Colors.red
+                          ? const Color.fromARGB(255, 184, 51, 41)
                           : Colors.grey,
                 ),
               ),
