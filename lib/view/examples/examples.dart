@@ -17,30 +17,34 @@ class _ExamplesState extends State<Examples> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Examples screen')),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Get.to(CounterScreen());
-            },
-            child: Text('Counter Class'),
-          ),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              Get.to(OpacityScreen());
-            },
-            child: Text('Opacity class'),
-          ),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              Get.to(Favourite());
-            },
-            child: Text('Favourite class'),
-          ),
-        ],
+      body: Center(
+        child: Column(
+         
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              
+              onPressed: () {
+                Get.to(CounterScreen());
+              },
+              child: Text('Counter Class', style: TextStyle(fontWeight: FontWeight.bold),),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(OpacityScreen());
+              },
+              child: Text('Opacity class',style: TextStyle(fontWeight: FontWeight.bold)),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(Favourite());
+              },
+              child: Text('Favourite class',style: TextStyle(fontWeight: FontWeight.bold)),
+            ),
+          ],
+        ),
       ),
     );
   }
