@@ -5,11 +5,8 @@ class LoginRepository {
 
   final _apiService  = NetworkApiServices() ;
 
-
  Future<dynamic> loginApi(Map data) async {
   return await _apiService.postApi(data, AppUrl.loginApi);
 }
-
-
 
 }
