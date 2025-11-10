@@ -19,6 +19,8 @@ class _OpacityScreenState extends State<OpacityScreen> {
       appBar: AppBar(title: const Text('GetX Tutorials')),
       body: Column(
         children: [
+          Text('Opacity using Slider'),
+          SizedBox(height: 20,),
           Obx(
             () => Container(
               height: 200,
