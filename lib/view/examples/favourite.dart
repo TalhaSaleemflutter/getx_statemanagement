@@ -17,39 +17,45 @@ class _FavouriteState extends State<Favourite> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Favourite file')),
-      body: ListView.builder(
-        itemCount: favourite.fruitList.length,
-        itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              onTap: () {
-                if (favourite.tempFruitList.contains(
-                  favourite.fruitList[index].toString(),
-                )) {
-                  favourite.removeFromFavourtite(
-                    favourite.fruitList[index].toString(),
-                  );
-                } else {
-                  favourite.addToFavourite(
-                    favourite.fruitList[index].toString(),
-                  );
-                }
-              },
-              title: Text(favourite.fruitList[index].toString()),
-              trailing: Obx(
-                () => Icon(
-                  Icons.favorite,
-                  color:
-                      favourite.tempFruitList.contains(
-                            favourite.fruitList[index].toString(),
-                          )
-                          ? const Color.fromARGB(255, 184, 51, 41)
-                          : Colors.grey,
+      body: Column(
+        children: [
+          ListView.builder(
+            itemCount: favourite.fruitList.length,
+            itemBuilder: (context, index) {
+              return Card(
+                child: ListTile(
+                  onTap: () {
+                    if (favourite.tempFruitList.contains(
+                      favourite.fruitList[index].toString(),
+                    )) {
+                      favourite.removeFromFavourtite(
+                        favourite.fruitList[index].toString(),
+                      );
+                    } else {
+                      favourite.addToFavourite(
+                        favourite.fruitList[index].toString(),
+                      );
+                    }
+                  },
+                  title: Text(favourite.fruitList[index].toString()),
+                  trailing: Obx(
+                    () => Icon(
+                      Icons.favorite,
+                      color:
+                          favourite.tempFruitList.contains(
+                                favourite.fruitList[index].toString(),
+                              )
+                              ? const Color.fromARGB(255, 184, 51, 41)
+                              : Colors.grey,
+                    ),
+                  ),
                 ),
-              ),
-            ),
-          );
-        },
+              );
+            },
+          ),
+          SizedBox(height: 30),
+        Text('these are my chanings from  feature3 branch and from talhasaleem77 accountgit')
+        ],
       ),
     );
   }
