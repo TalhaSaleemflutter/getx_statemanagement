@@ -43,6 +43,8 @@ class _ExamplesState extends State<Examples> {
               },
               child: Text('Favourite class',style: TextStyle(fontWeight: FontWeight.bold)),
             ),
+
+            
           ],
         ),
       ),

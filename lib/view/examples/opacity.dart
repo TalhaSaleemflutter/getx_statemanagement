@@ -20,7 +20,7 @@ class _OpacityScreenState extends State<OpacityScreen> {
       body: Column(
         children: [
           Text('Opacity using Slider'),
-          SizedBox(height: 20,),
+          SizedBox(height: 20),
           Obx(
             () => Container(
               height: 200,
@@ -37,8 +37,8 @@ class _OpacityScreenState extends State<OpacityScreen> {
               },
             ),
           ),
-          SizedBox(height : 20),
-          Text('This change i have done when i was in feature2 branch')
+          SizedBox(height: 30),
+          Text('these are chanings i have done when i am in feature3 branch'),
         ],
       ),
     );
