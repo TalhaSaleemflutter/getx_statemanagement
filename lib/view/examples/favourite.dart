@@ -53,7 +53,6 @@ class _FavouriteState extends State<Favourite> {
               );
             },
           ),
-
         ],
       ),
     );
