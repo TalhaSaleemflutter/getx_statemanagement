@@ -53,8 +53,7 @@ class _FavouriteState extends State<Favourite> {
               );
             },
           ),
-          SizedBox(height: 30),
-        Text('these are my chanings from  feature3 branch and from talhasaleem77 accountgit')
+
         ],
       ),
     );
